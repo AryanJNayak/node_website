@@ -1,0 +1,35 @@
+extends base.pug
+
+block style
+    style 
+        include  ../static/stylecont.css
+
+block content
+    nav#navbar.top 
+      ul
+        li #[a(href = "/") Home]
+        li #[a(href = "/") Services]
+        li #[a(href = "/contact")#active Contact Us]
+        li #[a(href = "/") Class Info]
+        li #[a(href = "/") About]
+    div#d
+    div.contact
+        h1 Contact Us
+        form(action="/contact", method="post",onsubmit="myFunction()")
+            fieldset
+                legend Name 
+                input(type="text", class="myinp" ,name="name" placeholder="Name")
+            fieldset
+                legend  Age
+                input(type="text", class="myinp", id="age" ,name="age" placeholder="Age")
+            fieldset
+                legend  Gender
+                input(type="Radio", class="myinp", id="genderm" ,name="gender", value="m")
+                p Male 
+                input(type="Radio", class="myinp", id="genderf" ,name="gender", value="f")
+                p Female
+            fieldset
+                legend  Address
+                textarea(placeholder="Describe yourself here...",name="address" id="address")
+            Button(class="btn" ,value="submit" ) Submit 
+    div#d

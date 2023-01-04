@@ -1,0 +1,55 @@
+extends base.pug
+
+block style
+    style 
+        include  ../static/stylehme.css
+
+block content
+    nav#navbar.top 
+        ul
+            li #[a(href = "/")#active Home]
+             li #[a(href = "/") Services]
+            li #[a(href = "/contact") Contact Us]
+            li #[a(href = "/") Class Info]
+            li #[a(href = "/") About]
+    section#introSection
+        h2 Welcome To Danceify
+        div  
+            p Dancing Is Like Dreaming With your feet
+    section#catagory
+        h1 Categories
+        div.card
+            div.carditem
+                img(src="../static/img1.jfif", alt="", srcset="")
+                h3 Garba
+                p We Are Here To Give You Exposure Of Garba And Also Get A Chance To Win Our Garba 2022 natitonal Competetion &address; 2022 State Compet-GB Tournament.
+                button.btn Read More
+            div.carditem
+                img(src="../static/img2.jfif", alt="", srcset="")
+                h3 Belle
+                p We Are Here To Give You Exposure Of Belle And Also Get A Chance To Win Our Belle 2022 natitonal Competetion &address; 2022 State Compet-BEL Tournament.
+                button.btn Read More
+            div.carditem
+                img(src="../static/img3.jfif", alt="", srcset="")
+                h3 Salsa
+                p We Are Here To Give You Exposure Of Salsa And Also Get A Chance To Win Our Salsa 2022 natitonal Competetion &address; 2022 State Compet-SLS Tournament.
+                button.btn Read More
+    div#d
+    div#h
+    section#sponser
+        div.sponser-company
+            div.sp-item#im1
+                img(src="../static/sponser1.png", alt="", srcset="")
+            div.sp-item#im2
+                img(src="../static/sponser2.png", alt="", srcset="")
+            div.sp-item#im3
+                img(src="../static/sponser3.png", alt="", srcset="")
+            div.sp-item#im4
+                img(src="../static/sponser4.png", alt="", srcset="")
+            div.sp-item#im5
+                img(src="../static/sponser5.png", alt="", srcset="")
+            div.sp-item#im6
+                img(src="../static/sponser6.png", alt="", srcset="")
+            div.sp-item#im7
+                img(src="../static/sponser7.jpg", alt="", srcset="")
+    div#h

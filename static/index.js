@@ -1,0 +1,4 @@
+myFunction = () =>{
+    
+    alert('Sucessfully Submitted');
+}
